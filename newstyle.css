@@ -220,6 +220,12 @@ header a:hover {
 }
 
 /* --- Footer Section --- */
+footer {
+  margin-bottom: 20px;
+}
+footer .footer-links {
+  padding: 20px 0 0 0;
+}
 footer hr {
   margin: 0;
 }
@@ -227,7 +233,7 @@ footer ul {
   display: flex;
   justify-content: center;
   background-color: #212121;
-  padding: 10px 0px 0px 0px;
+  padding: 10px 0px px 0px;
   margin: 0;
   list-style: none;
 }
@@ -251,6 +257,7 @@ footer a:hover {
 .footer-icons {
   display: flex;
   justify-content: center;
+  align-items: center;
   padding: 10px 0;
   background-color: #212121;
 }
@@ -260,6 +267,30 @@ footer a:hover {
 }
 .footer-icons a:hover {
   color: white;
+}
+
+/* --- RESUME PAGE --- */
+.title-center {
+  text-align: center;
+  margin-top: 10px;
+}
+.title-center h1 {
+  color: #ffcb7b;
+  font-size: 26px;
+  margin: 0;
+}
+
+.resume {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+.resume iframe {
+  width: 100%;
+  max-width: 100%;
+  height: 500px;
+  border: none;
+  border-radius: 8px;
 }
 
 /*# sourceMappingURL=newstyle.css.map */
