@@ -1,0 +1,294 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+}
+
+/* --- Navigation Bar --- */
+header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+* ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: #466995;
+  display: flex;
+}
+
+header li {
+  float: left;
+}
+
+header li a {
+  display: block;
+  color: white;
+  padding: 35px 20px;
+  text-decoration: none;
+}
+
+header li a:hover {
+  background-color: #dbe9ee;
+  color: #466995;
+}
+
+header li a.active {
+  background-color: #dbe9ee;
+  color: #466995;
+}
+
+/* -------------------------------------------- */
+
+h1 {
+  color: #466995;
+  font-family: "Oswald", sans-serif;
+  font-size: 32px;
+  font-weight: 300;
+}
+
+h2 {
+  color: #333;
+  font-family: "Varela Round", sans-serif;
+  font-size: 26px;
+  font-weight: 100;
+  margin: 0 auto 20px auto;
+}
+
+h3 {
+  color: #466995;
+  font-family: "Oswald", sans-serif;
+  font-size: 18px;
+  text-align: center;
+  font-weight: 700;
+  padding: 30px;
+}
+
+h4 {
+  color: #fff;
+  font-family: "Oswald", sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  letter-spacing: 2px;
+}
+
+p {
+  color: #333;
+  font-family: "Varela Round", sans-serif;
+  font-size: 18px;
+}
+
+.about-me {
+  background-color: #dbe9ee;
+  box-sizing: border-box;
+  padding: 40px;
+  padding-top: 15px;
+  text-align: center;
+  width: 100%;
+  position: relative;
+}
+
+.learning {
+  text-align: center;
+  padding: 40px;
+  color: #466995;
+  margin-bottom: 30px;
+}
+
+.learning .fa-brands {
+  padding: 30px;
+}
+
+/* --- Slidershow --- */
+
+.slider-container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+
+.mySlides {
+  width: 100%;
+  height: 100vh; /* viewport height */
+  object-fit: cover; /* keeps the image's proportion while filling the whole screen, without stretching */
+  display: none;
+  position: relative;
+  opacity: 0;
+  transition: opacity 1s ease-in-out; /* fade transition */
+}
+
+.mySlides.show {
+  display: block;
+  opacity: 1;
+  z-index: 1;
+}
+
+.w3-left,
+.w3-right {
+  font-size: 40px;
+  color: white;
+  background-color: #333;
+  padding: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  position: absolute;
+  cursor: pointer;
+  z-index: 3;
+}
+
+.w3-left {
+  left: 20px;
+}
+
+.w3-right {
+  right: 20px;
+}
+
+/* Dot container & dots */
+.w3-display-bottommiddle {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  z-index: 3;
+}
+
+.w3-badge {
+  height: 13px;
+  width: 13px;
+  margin: 0 4px;
+  background-color: #ffffff80;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.w3-badge .w3-white {
+  background-color: #fff;
+}
+
+/* --- footer --- */
+footer {
+  background-color: #212121;
+  align-items: center;
+  color: #fff;
+  padding: 20px 40px;
+
+  ul {
+    background-color: #212121;
+  }
+}
+
+footer .fa-brands {
+  color: #fff;
+}
+
+footer li a {
+  text-decoration: none; /* removing underline links */
+}
+
+/* footer navigation links */
+.footer-links {
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+}
+
+/* footer icons + text "let's connect:" */
+.connect {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.Page-title {
+  margin: 20px;
+}
+
+.title-center {
+  text-align: center;
+}
+
+/* Contact Form  */
+
+input[type="text"],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical; /* Allow the user to vertically resize the textarea */
+}
+
+/* Submit button */
+input[type="submit"] {
+  background-color: #466995;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #dbe9ee;
+  color: #466995;
+}
+
+/* Form color and design */
+.container {
+  display: flex;
+  gap: 20px;
+  border-radius: 5px;
+  padding: 20px;
+}
+
+/* Flexbox Reflection Page */
+
+.flexbox {
+  border: #333 solid 2px;
+  display: inline-block;
+
+  width: 300px;
+  height: 600px;
+  margin: 25px;
+  padding: 5px;
+}
+
+.flexbox .box-title {
+  background-color: #466995;
+  padding-left: 5px;
+  color: #fff;
+  font-size: 25px;
+}
+
+/* Resume Images */
+.resume-img img {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  display: block;
+  margin: 10px auto;
+}

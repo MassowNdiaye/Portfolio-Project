@@ -1,0 +1,221 @@
+body,
+html {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Varela Round", sans-serif;
+  background-color: #212121;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1;
+}
+
+/* --- Navigation Bar --- */
+header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+header ul {
+  background-color: #212121;
+  padding: 10px 0;
+  margin: 0;
+  text-align: end;
+}
+header li {
+  display: inline;
+  margin-right: 20px;
+}
+header a {
+  color: white;
+  text-decoration: none;
+  font-weight: lighter;
+}
+header a:hover {
+  color: #ffcb7b;
+}
+
+/* --- Hero Section --- */
+.hero-container {
+  position: relative;
+  width: 100%;
+}
+.hero-container img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* --- About Me Section --- */
+section {
+  display: flex;
+  flex-direction: column;
+  background-color: #323232;
+}
+section .about-me {
+  padding: 20px 20px 50px 20px;
+  background-color: #323232;
+  text-align: left;
+}
+section .about-me h2 {
+  color: #ffcb7b;
+  margin-bottom: 20px;
+  margin: 0;
+}
+section .about-me h3 {
+  margin-top: 0;
+  font-size: 24px;
+}
+section .about-me p {
+  font-size: 16px;
+  margin: 0;
+}
+section .about-me i {
+  margin-top: 15px;
+  color: #ffcb7b;
+}
+section .about-me i:hover {
+  color: white;
+}
+section .contact-me {
+  padding: 0px 20px 40px 20px;
+}
+section .contact-me h4 {
+  color: white;
+  font-size: 36px;
+  margin: 0;
+}
+section .contact-me a {
+  color: #ffcb7b;
+  text-decoration: none;
+  font-size: 20px;
+  display: block;
+  margin-bottom: 10px;
+}
+section .contact-me a:hover {
+  color: white;
+}
+
+/* --- Projects Section --- */
+.projects-container {
+  display: block;
+  text-align: center;
+  background-color: #212121;
+}
+
+.video-container {
+  display: flex;
+  gap: 16px;
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding: 10px;
+  scroll-snap-type: x mandatory;
+  margin-left: 10px;
+}
+
+.video-container video {
+  width: 300px;
+  flex-shrink: 0; /* prevents shrinking */
+  scroll-snap-align: start; /* optional */
+  border-radius: 8px;
+}
+
+/* --- Learning More Section --- */
+.learning {
+  padding: 20px;
+  background-color: #323232;
+  text-align: center;
+}
+.learning h1 {
+  color: #ffcb7b;
+  margin-top: 20px;
+}
+.learning p {
+  font-size: 18px;
+  margin: 0 0px 40px;
+}
+.learning i {
+  margin: 0 15px;
+  color: #ffcb7b;
+}
+.learning i:hover {
+  color: white;
+}
+
+/* --- Tech Stack Section --- */
+.tech-stack {
+  padding: 20px;
+  background-color: #212121;
+  text-align: center;
+}
+.tech-stack h2 {
+  color: #ffcb7b;
+  margin-bottom: 20px;
+}
+.tech-stack .tech-icons {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+.tech-stack .tech-icons i {
+  font-size: 50px;
+  color: #ffcb7b;
+}
+.tech-stack .tech-icons i:hover {
+  color: white;
+}
+
+/* --- Footer Section --- */
+footer ul {
+  display: flex;
+  justify-content: center;
+  background-color: #212121;
+  padding: 10px 0;
+  margin: 0;
+  list-style: none;
+}
+footer li {
+  margin-right: 20px;
+}
+footer h4 {
+  color: white;
+  font-size: 16px;
+  margin: 0;
+}
+footer a {
+  color: white;
+  text-decoration: none;
+  font-weight: lighter;
+}
+footer a:hover {
+  color: #ffcb7b;
+}
+
+.footer-icons {
+  display: flex;
+  justify-content: center;
+  padding: 10px 0;
+  background-color: #212121;
+}
+.footer-icons a {
+  margin: 0 10px;
+  color: #ffcb7b;
+}
+.footer-icons a:hover {
+  color: white;
+}
+
+/*# sourceMappingURL=newstyle.css.map */

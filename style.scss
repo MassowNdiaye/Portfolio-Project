@@ -1,0 +1,245 @@
+$primary-color: #212121;
+$secondary-color: #323232;
+$title-color: #ffcb7b;
+$text-color: #ffff;
+$font-family: "Varela Round", sans-serif;
+
+body,
+html {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+}
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $font-family;
+  background-color: $primary-color;
+  color: $text-color;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1;
+}
+
+/* --- Navigation Bar --- */
+header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+
+  ul {
+    background-color: $primary-color;
+    padding: 10px 0;
+    margin: 0;
+    text-align: end;
+  }
+  li {
+    display: inline;
+    margin-right: 20px;
+  }
+  a {
+    color: $text-color;
+    text-decoration: none;
+    font-weight: lighter; //Fix bold issue
+    &:hover {
+      color: $title-color;
+    }
+  }
+}
+
+/* --- Hero Section --- */
+.hero-container {
+  position: relative;
+  width: 100%;
+  img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+}
+
+/* --- About Me Section --- */
+section {
+  display: flex;
+  flex-direction: column;
+  background-color: $secondary-color;
+
+  .about-me {
+    padding: 20px 20px 50px 20px;
+    background-color: $secondary-color;
+    text-align: left;
+
+    h2 {
+      color: $title-color;
+      margin-bottom: 20px;
+      margin: 0;
+    }
+
+    h3 {
+      margin-top: 0;
+      font-size: 24px;
+    }
+
+    p {
+      font-size: 16px;
+      margin: 0;
+    }
+
+    i {
+      margin-top: 15px;
+      color: $title-color;
+      &:hover {
+        color: $text-color;
+      }
+    }
+  }
+
+  .contact-me {
+    padding: 0px 20px 40px 20px;
+
+    h4 {
+      color: $text-color;
+      font-size: 36px;
+      margin: 0;
+    }
+
+    a {
+      color: $title-color;
+      text-decoration: none;
+      font-size: 20px;
+      display: block;
+      margin-bottom: 10px;
+      &:hover {
+        color: $text-color;
+      }
+    }
+  }
+}
+
+/* --- Projects Section --- */
+.projects-container {
+  display: block;
+  text-align: center;
+  background-color: $primary-color;
+}
+
+.video-container {
+  display: flex;
+  gap: 16px;
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding: 10px;
+  scroll-snap-type: x mandatory;
+  margin-left: 10px;
+}
+
+.video-container video {
+  width: 300px;
+  flex-shrink: 0; /* prevents shrinking */
+  scroll-snap-align: start; /* optional */
+  border-radius: 8px;
+}
+
+/* --- Learning More Section --- */
+
+.learning {
+  padding: 20px;
+  background-color: $secondary-color;
+  text-align: center;
+
+  h1 {
+    color: $title-color;
+    margin-top: 20px;
+  }
+
+  p {
+    font-size: 18px;
+    margin: 0 0px 40px;
+  }
+
+  i {
+    margin: 0 15px;
+    color: $title-color;
+    &:hover {
+      color: $text-color;
+    }
+  }
+}
+
+/* --- Tech Stack Section --- */
+.tech-stack {
+  padding: 20px;
+  background-color: $primary-color;
+  text-align: center;
+
+  h2 {
+    color: $title-color;
+    margin-bottom: 20px;
+  }
+
+  .tech-icons {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+
+    i {
+      font-size: 50px;
+      color: $title-color;
+      &:hover {
+        color: $text-color;
+      }
+    }
+  }
+}
+
+/* --- Footer Section --- */
+footer {
+  ul {
+    display: flex;
+    justify-content: center;
+    background-color: $primary-color;
+    padding: 10px 0;
+    margin: 0;
+    list-style: none;
+  }
+  li {
+    margin-right: 20px;
+  }
+
+  h4 {
+    color: $text-color;
+    font-size: 16px;
+    margin: 0;
+  }
+
+  a {
+    color: $text-color;
+    text-decoration: none;
+    font-weight: lighter; //Fix bold issue
+    &:hover {
+      color: $title-color;
+    }
+  }
+}
+
+.footer-icons {
+  display: flex;
+  justify-content: center;
+  padding: 10px 0;
+  background-color: $primary-color;
+
+  a {
+    margin: 0 10px;
+    color: $title-color;
+    &:hover {
+      color: $text-color;
+    }
+  }
+}
