@@ -137,6 +137,16 @@ section {
   padding: 10px;
   scroll-snap-type: x mandatory;
   margin-left: 10px;
+
+  h2 {
+    margin: 0px;
+  }
+
+  p {
+    color: $text-color;
+    font-size: 15px;
+    margin: 5px;
+  }
 }
 
 .video-container video {
