@@ -58,14 +58,14 @@ header {
   position: relative;
   width: 100%;
   img {
-    width: 100%;
+    width: 130%;
     height: auto;
     display: block;
   }
 }
 
 /* --- About Me Section --- */
-section {
+.about-container {
   display: flex;
   flex-direction: column;
   background-color: $secondary-color;
@@ -87,7 +87,7 @@ section {
     }
 
     p {
-      font-size: 16px;
+      font-size: 17px;
       margin: 0;
     }
 
@@ -127,6 +127,20 @@ section {
   display: block;
   text-align: center;
   background-color: $primary-color;
+
+  h4 {
+    color: $title-color;
+    font-size: 18px;
+    margin: 0;
+    margin-top: 20px;
+  }
+
+  h1 {
+    color: $text-color;
+    font-size: 24px;
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
 }
 
 .video-container {
@@ -139,6 +153,7 @@ section {
   margin-left: 10px;
 
   h2 {
+    font-size: 26px;
     margin: 0px;
   }
 
@@ -147,10 +162,20 @@ section {
     font-size: 15px;
     margin: 5px;
   }
+
+  a {
+    color: $title-color;
+    font-size: 16px;
+    margin-bottom: 10px;
+    display: inline-block;
+    &:hover {
+      color: $text-color;
+    }
+  }
 }
 
 .video-container video {
-  width: 300px;
+  width: 250px;
   flex-shrink: 0; /* prevents shrinking */
   scroll-snap-align: start; /* optional */
   border-radius: 8px;
@@ -159,18 +184,20 @@ section {
 /* --- Learning More Section --- */
 
 .learning {
-  padding: 20px;
+  padding: 40px;
   background-color: $secondary-color;
   text-align: center;
 
   h1 {
-    color: $title-color;
-    margin-top: 20px;
+    color: $text-color;
+    font-size: 28px;
+    margin: 0px;
   }
 
-  p {
+  a {
     font-size: 18px;
     margin: 0 0px 40px;
+    color: $title-color;
   }
 
   i {
@@ -187,10 +214,18 @@ section {
   padding: 20px;
   background-color: $primary-color;
   text-align: center;
+  margin-bottom: 10px;
 
   h2 {
     color: $title-color;
-    margin-bottom: 20px;
+    font-size: 18px;
+    margin: 0px;
+  }
+
+  h4 {
+    color: $text-color;
+    font-size: 20px;
+    margin: 0px 0 20px 0;
   }
 
   .tech-icons {
@@ -211,11 +246,16 @@ section {
 
 /* --- Footer Section --- */
 footer {
+  // border-top: 2px solid #ffff;
+  hr {
+    margin: 0;
+  }
+
   ul {
     display: flex;
     justify-content: center;
     background-color: $primary-color;
-    padding: 10px 0;
+    padding: 10px 0px 0px 0px;
     margin: 0;
     list-style: none;
   }

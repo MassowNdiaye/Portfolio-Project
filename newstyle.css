@@ -53,58 +53,58 @@ header a:hover {
   width: 100%;
 }
 .hero-container img {
-  width: 100%;
+  width: 130%;
   height: auto;
   display: block;
 }
 
 /* --- About Me Section --- */
-section {
+.about-container {
   display: flex;
   flex-direction: column;
   background-color: #323232;
 }
-section .about-me {
+.about-container .about-me {
   padding: 20px 20px 50px 20px;
   background-color: #323232;
   text-align: left;
 }
-section .about-me h2 {
+.about-container .about-me h2 {
   color: #ffcb7b;
   margin-bottom: 20px;
   margin: 0;
 }
-section .about-me h3 {
+.about-container .about-me h3 {
   margin-top: 0;
   font-size: 24px;
 }
-section .about-me p {
-  font-size: 16px;
+.about-container .about-me p {
+  font-size: 17px;
   margin: 0;
 }
-section .about-me i {
+.about-container .about-me i {
   margin-top: 15px;
   color: #ffcb7b;
 }
-section .about-me i:hover {
+.about-container .about-me i:hover {
   color: white;
 }
-section .contact-me {
+.about-container .contact-me {
   padding: 0px 20px 40px 20px;
 }
-section .contact-me h4 {
+.about-container .contact-me h4 {
   color: white;
   font-size: 36px;
   margin: 0;
 }
-section .contact-me a {
+.about-container .contact-me a {
   color: #ffcb7b;
   text-decoration: none;
   font-size: 20px;
   display: block;
   margin-bottom: 10px;
 }
-section .contact-me a:hover {
+.about-container .contact-me a:hover {
   color: white;
 }
 
@@ -113,6 +113,18 @@ section .contact-me a:hover {
   display: block;
   text-align: center;
   background-color: #212121;
+}
+.projects-container h4 {
+  color: #ffcb7b;
+  font-size: 18px;
+  margin: 0;
+  margin-top: 20px;
+}
+.projects-container h1 {
+  color: white;
+  font-size: 24px;
+  margin-top: 0;
+  margin-bottom: 10px;
 }
 
 .video-container {
@@ -125,6 +137,7 @@ section .contact-me a:hover {
   margin-left: 10px;
 }
 .video-container h2 {
+  font-size: 26px;
   margin: 0px;
 }
 .video-container p {
@@ -132,9 +145,18 @@ section .contact-me a:hover {
   font-size: 15px;
   margin: 5px;
 }
+.video-container a {
+  color: #ffcb7b;
+  font-size: 16px;
+  margin-bottom: 10px;
+  display: inline-block;
+}
+.video-container a:hover {
+  color: white;
+}
 
 .video-container video {
-  width: 300px;
+  width: 250px;
   flex-shrink: 0; /* prevents shrinking */
   scroll-snap-align: start; /* optional */
   border-radius: 8px;
@@ -142,17 +164,19 @@ section .contact-me a:hover {
 
 /* --- Learning More Section --- */
 .learning {
-  padding: 20px;
+  padding: 40px;
   background-color: #323232;
   text-align: center;
 }
 .learning h1 {
-  color: #ffcb7b;
-  margin-top: 20px;
+  color: white;
+  font-size: 28px;
+  margin: 0px;
 }
-.learning p {
+.learning a {
   font-size: 18px;
   margin: 0 0px 40px;
+  color: #ffcb7b;
 }
 .learning i {
   margin: 0 15px;
@@ -167,10 +191,17 @@ section .contact-me a:hover {
   padding: 20px;
   background-color: #212121;
   text-align: center;
+  margin-bottom: 10px;
 }
 .tech-stack h2 {
   color: #ffcb7b;
-  margin-bottom: 20px;
+  font-size: 18px;
+  margin: 0px;
+}
+.tech-stack h4 {
+  color: white;
+  font-size: 20px;
+  margin: 0px 0 20px 0;
 }
 .tech-stack .tech-icons {
   display: flex;
@@ -187,11 +218,14 @@ section .contact-me a:hover {
 }
 
 /* --- Footer Section --- */
+footer hr {
+  margin: 0;
+}
 footer ul {
   display: flex;
   justify-content: center;
   background-color: #212121;
-  padding: 10px 0;
+  padding: 10px 0px 0px 0px;
   margin: 0;
   list-style: none;
 }
