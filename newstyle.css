@@ -113,12 +113,12 @@ header a:hover {
   display: block;
   text-align: center;
   background-color: #212121;
+  margin-top: 30px;
 }
 .projects-container h4 {
   color: #ffcb7b;
   font-size: 18px;
   margin: 0;
-  margin-top: 20px;
 }
 .projects-container h1 {
   color: white;
@@ -135,6 +135,7 @@ header a:hover {
   padding: 10px;
   scroll-snap-type: x mandatory;
   margin-left: 10px;
+  margin-bottom: 10px;
 }
 .video-container h2 {
   font-size: 26px;
@@ -164,7 +165,7 @@ header a:hover {
 
 /* --- Learning More Section --- */
 .learning {
-  padding: 40px;
+  padding: 50px 40px 50px 40px;
   background-color: #323232;
   text-align: center;
 }
@@ -191,7 +192,7 @@ header a:hover {
   padding: 20px;
   background-color: #212121;
   text-align: center;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 .tech-stack h2 {
   color: #ffcb7b;
