@@ -1,7 +1,9 @@
-$primary-color: #212121;
-$secondary-color: #323232;
-$title-color: #ffcb7b;
-$text-color: #ffff;
+/* --- GLOBAL STYLES --- */
+$background-color: #ffffff;
+$secondary-color: #e5e7eb;
+$primary-text: #1f2933;
+$secondary-text: #4b5563;
+$accent-color: #2563eb;
 $font-family: "Varela Round", sans-serif;
 
 body,
@@ -17,8 +19,8 @@ html {
 
 body {
   font-family: $font-family;
-  background-color: $primary-color;
-  color: $text-color;
+  background-color: $background-color;
+  color: $primary-text;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
@@ -26,16 +28,19 @@ body {
 
 main {
   flex: 1;
+  background-color: $background-color;
 }
 
 /* --- Navigation Bar --- */
 header {
-  position: sticky;
-  top: 0;
-  z-index: 10;
+  // position: sticky;
+  // top: 0;
+  // z-index: 10;
+  padding: 20px 0;
+  background-color: $secondary-color;
 
   ul {
-    background-color: $primary-color;
+    background-color: $secondary-color;
     padding: 10px 0;
     margin: 0;
     text-align: end;
@@ -45,11 +50,11 @@ header {
     margin-right: 20px;
   }
   a {
-    color: $text-color;
+    color: $primary-text;
     text-decoration: none;
     font-weight: lighter; //Fix bold issue
     &:hover {
-      color: $title-color;
+      color: $accent-color;
     }
   }
 }
@@ -77,7 +82,7 @@ header {
     text-align: left;
 
     h2 {
-      color: $title-color;
+      color: $primary-text;
       margin-bottom: 20px;
       margin: 0;
     }
@@ -85,40 +90,39 @@ header {
     h3 {
       margin-top: 0;
       font-size: 24px;
+      color: $secondary-text;
     }
 
     p {
       font-size: 17px;
       margin: 0;
+      color: $secondary-text;
     }
 
     i {
       margin-top: 15px;
-      color: $title-color;
-      &:hover {
-        color: $text-color;
-      }
+      color: $accent-color;
     }
   }
+}
 
-  .contact-me {
-    padding: 0px 20px 40px 20px;
+.contact-me {
+  padding: 0px 20px 40px 20px;
 
-    h4 {
-      color: $text-color;
-      font-size: 36px;
-      margin: 0;
-    }
+  h4 {
+    color: $primary-text;
+    font-size: 36px;
+    margin: 0;
+  }
 
-    a {
-      color: $title-color;
-      text-decoration: none;
-      font-size: 20px;
-      display: block;
-      margin-bottom: 10px;
-      &:hover {
-        color: $text-color;
-      }
+  a {
+    color: $accent-color;
+    text-decoration: none;
+    font-size: 20px;
+    display: block;
+    margin-bottom: 10px;
+    &:hover {
+      color: $primary-text;
     }
   }
 }
@@ -127,17 +131,17 @@ header {
 .projects-container {
   display: block;
   text-align: center;
-  background-color: $primary-color;
+  background-color: $background-color;
   margin-top: 30px;
 
   h4 {
-    color: $title-color;
+    color: $primary-text;
     font-size: 18px;
     margin: 0;
   }
 
   h1 {
-    color: $text-color;
+    color: $secondary-text;
     font-size: 24px;
     margin-top: 0;
     margin-bottom: 10px;
@@ -156,22 +160,23 @@ header {
 
   h2 {
     font-size: 26px;
+    color: $primary-text;
     margin: 0px;
   }
 
   p {
-    color: $text-color;
+    color: $secondary-text;
     font-size: 15px;
     margin: 5px;
   }
 
   a {
-    color: $title-color;
+    color: $accent-color;
     font-size: 16px;
     margin-bottom: 10px;
     display: inline-block;
     &:hover {
-      color: $text-color;
+      color: $primary-text;
     }
   }
 }
@@ -179,8 +184,11 @@ header {
 .video-container video {
   width: 250px;
   flex-shrink: 0; /* prevents shrinking */
-  scroll-snap-align: start; /* optional */
   border-radius: 8px;
+}
+
+.video-container::-webkit-scrollbar {
+  display: none; /* Chrome, Safari */
 }
 
 /* --- Learning More Section --- */
@@ -191,7 +199,7 @@ header {
   text-align: center;
 
   h1 {
-    color: $text-color;
+    color: $primary-text;
     font-size: 28px;
     margin: 0px;
   }
@@ -199,14 +207,14 @@ header {
   a {
     font-size: 18px;
     margin: 0 0px 40px;
-    color: $title-color;
+    color: $accent-color;
   }
 
   i {
     margin: 0 15px;
-    color: $title-color;
+    color: $accent-color;
     &:hover {
-      color: $text-color;
+      color: $primary-text;
     }
   }
 }
@@ -214,18 +222,18 @@ header {
 /* --- Tech Stack Section --- */
 .tech-stack {
   padding: 20px;
-  background-color: $primary-color;
+  background-color: $background-color;
   text-align: center;
   margin-bottom: 20px;
 
   h2 {
-    color: $title-color;
+    color: $primary-text;
     font-size: 18px;
     margin: 0px;
   }
 
   h4 {
-    color: $text-color;
+    color: $secondary-text;
     font-size: 20px;
     margin: 0px 0 20px 0;
   }
@@ -238,9 +246,9 @@ header {
 
     i {
       font-size: 50px;
-      color: $title-color;
+      color: $primary-text;
       &:hover {
-        color: $text-color;
+        color: $accent-color;
       }
     }
   }
@@ -248,40 +256,33 @@ header {
 
 /* --- Footer Section --- */
 footer {
-  margin-bottom: 20px;
-
-  .footer-links {
-    padding: 20px 0 0 0;
-  }
-
-  hr {
-    margin: 0;
-  }
+  background-color: $secondary-color;
+  padding: 20px;
 
   ul {
     display: flex;
     justify-content: center;
-    background-color: $primary-color;
     padding: 10px 0px px 0px;
     margin: 0;
     list-style: none;
   }
+
   li {
     margin-right: 20px;
   }
 
   h4 {
-    color: $text-color;
+    color: $primary-text;
     font-size: 16px;
     margin: 0;
   }
 
   a {
-    color: $text-color;
-    text-decoration: none;
+    color: $primary-text;
+    // text-decoration: none;
     font-weight: lighter; //Fix bold issue
     &:hover {
-      color: $title-color;
+      color: $accent-color;
     }
   }
 }
@@ -291,14 +292,28 @@ footer {
   justify-content: center;
   align-items: center;
   padding: 10px 0;
-  background-color: $primary-color;
+  background-color: $secondary-color;
 
   a {
     margin: 0 10px;
-    color: $title-color;
-    &:hover {
-      color: $text-color;
-    }
+  }
+  .fa-linkedin {
+    color: #0a66c2;
+  }
+
+  .fa-square-github {
+    color: #171515;
+  }
+}
+
+/* --- REFLECTION PAGE --- */
+.reflection-title {
+  text-align: center;
+  margin-top: 20px;
+  h1 {
+    color: $primary-text;
+    font-size: 28px;
+    margin: 0;
   }
 }
 
@@ -308,8 +323,8 @@ footer {
   margin-top: 10px;
 
   h1 {
-    color: $title-color;
-    font-size: 26px;
+    color: $primary-text;
+    font-size: 28px;
     margin: 0;
   }
 }
@@ -325,4 +340,52 @@ footer {
     max-width: 800px;
     height: auto;
   }
+}
+
+/* --- CONTACT PAGE --- */
+.page-title {
+  text-align: center;
+  margin-top: 20px;
+
+  h1 {
+    color: $primary-text;
+    font-size: 28px;
+    margin: 0;
+  }
+}
+input[type="text"],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical; /* Allow the user to vertically resize the textarea */
+}
+
+/* Submit button */
+input[type="submit"] {
+  background-color: $accent-color;
+  color: $background-color;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #dbe9ee;
+  color: $background-color;
+}
+
+/* Form color and design */
+.container {
+  display: flex;
+  gap: 20px;
+  border-radius: 5px;
+  padding: 20px;
+  margin-bottom: 30px;
 }

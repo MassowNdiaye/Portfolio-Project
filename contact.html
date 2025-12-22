@@ -1,84 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <title>Contact Page</title>
-  <link href="https://fonts.googleapis.com/css?family=Oswald:300,700|Varela+Round" rel="stylesheet">
-  <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
-  <link rel="stylesheet" href="style.css">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.7.2/css/all.css"> <!--Icons Library-->
-</head>
-<body>
+    <link
+      href="https://fonts.googleapis.com/css?family=Oswald:300,700|Varela+Round"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css" />
+    <link rel="stylesheet" href="newstyle.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v6.7.2/css/all.css"
+    />
+    <!--Icons Library-->
+  </head>
+  <body>
     <!--Navigation Bar-->
-      <header>
-          <ul>
-            <li><a href="index.html">HOME</a></li> <!-- REMEBER TO REMOVE UNDERLINE ON THE LINKS-->
-            <li><a href="reflection.html">REFLECTION</a></li>
-            <li><a href="resume.html">RESUME</a></li>
-            <li><a class="active" href="contact.html">CONTACT</a></li>
-          </ul>
-      </header>
+    <header>
+      <ul>
+        <li><a href="index.html">HOME</a></li>
+        <!-- REMEBER TO REMOVE UNDERLINE ON THE LINKS-->
+        <li><a href="reflection.html">REFLECTION</a></li>
+        <li><a href="resume.html">RESUME</a></li>
+        <li><a class="active" href="contact.html">CONTACT</a></li>
+      </ul>
+    </header>
 
-      <!--Page Title-->
-      <main>
-        <div class="Page-title">
-          <h1>Contact Form</h1>
-        </div>
+    <!--Page Title-->
+    <main>
+      <div class="page-title">
+        <h1>Contact Form</h1>
+      </div>
 
       <!--Contact Form-->
       <div class="container">
         <form action="action_page.php">
-          
           <!--firstname-->
           <label for="fname">First Name:</label>
-          <input type="text" id="fname" name="firstname" placeholder="Your name..">
-          
+          <input
+            type="text"
+            id="fname"
+            name="firstname"
+            placeholder="Your name.."
+          />
+
           <!--lastname-->
           <label for="lname">Last Name:</label>
-          <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+          <input
+            type="text"
+            id="lname"
+            name="lastname"
+            placeholder="Your last name.."
+          />
 
           <!--Phone number-->
           <label for="phone-num">Phone Number:</label>
-          <input type="text" id="phone-num" name="phone-num" placeholder="Your phone number..">
-          
+          <input
+            type="text"
+            id="phone-num"
+            name="phone-num"
+            placeholder="Your phone number.."
+          />
+
           <!--email-->
           <label for="email">Email:</label>
-          <input type="text" id="email" name="email" placeholder="Your email..">
+          <input
+            type="text"
+            id="email"
+            name="email"
+            placeholder="Your email.."
+          />
 
           <label for="Comments">Comments:</label>
-          <textarea id="Comments" name="Comments" placeholder="Write something.." style="height:200px"></textarea>
+          <textarea
+            id="Comments"
+            name="Comments"
+            placeholder="Write something.."
+            style="height: 200px"
+          ></textarea>
 
-
-          <input type="submit" value="Submit">
-
+          <input type="submit" value="Submit" />
         </form>
       </div>
-      </main>
-
-
+    </main>
 
     <!--Footer-->
-      <footer>
-        <div class="footer">
-          <ul class="footer-links">
-            <li><a href="index.html"><h4>Homepage</h4></a></li>
-            <li><a href="reflection.html"><h4>Reflection</h4></a></li>
-            <li><a href="resume.html"><h4>Resume</h4></a></li>
-            <li><a href="contact.html"><h4>Contact</h4></a></li>
-          </ul>
+    <footer>
+      <div class="footer">
+        <ul class="footer-links">
+          <li><a href="index.html">Homepage</a></li>
+          <li><a href="reflection.html">Reflection</a></li>
+          <li><a href="resume.html">Resume</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
 
-          <div class="connect"> 
-            <h4>Let's connect: </h4>
-
-            <!--footer icons--> 
-            <a href="https://www.linkedin.com/in/elhadji-massow-ndiaye-b11397299/e" target="_blank">   
-            <i class="fa-brands fa-linkedin" style="font-size:25px"></i></a>
-
-            <a href="https://github.com/MassowNdiaye" target="_blank"> 
-            <i class="fa-brands fa-square-github" style="font-size:25px"></i></a>
-          </div>
+        <!--footer icons-->
+        <div class="footer-icons">
+          <h4>Let's connect:</h4>
+          <a
+            href="https://www.linkedin.com/in/elhadji-massow-ndiaye-b11397299/e"
+            target="_blank"
+          >
+            <i class="fa-brands fa-linkedin" style="font-size: 25px"></i
+          ></a>
+          <a href="https://github.com/MassowNdiaye" target="_blank">
+            <i class="fa-brands fa-square-github" style="font-size: 25px"></i
+          ></a>
         </div>
-      </footer>
-
-</body>
+      </div>
+    </footer>
+  </body>
 </html>
