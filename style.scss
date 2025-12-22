@@ -6,11 +6,10 @@ $secondary-text: #4b5563;
 $accent-color: #2563eb;
 $font-family: "Varela Round", sans-serif;
 
-body,
-html {
-  height: 100%;
-  width: 100%;
+html,
+body {
   margin: 0;
+  padding: 0;
   overflow-x: hidden;
 }
 * {
