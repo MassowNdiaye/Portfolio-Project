@@ -60,9 +60,7 @@ header {
   width: 100%;
   img {
     width: 100%;
-    height: 300px;
     object-fit: cover;
-    object-position: left;
   }
 }
 
@@ -81,12 +79,6 @@ header {
       color: $primary-text;
       margin-bottom: 20px;
       margin: 0;
-    }
-
-    h3 {
-      margin-top: 0;
-      font-size: 24px;
-      color: $secondary-text;
     }
 
     p {
