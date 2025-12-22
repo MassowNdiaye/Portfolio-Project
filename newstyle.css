@@ -54,8 +54,9 @@ header a:hover {
 }
 .hero-container img {
   width: 100%;
-  height: auto;
-  display: block;
+  height: 300px;
+  object-fit: cover;
+  object-position: left;
 }
 
 /* --- About Me Section --- */

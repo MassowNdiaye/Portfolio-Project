@@ -63,8 +63,9 @@ header {
   width: 100%;
   img {
     width: 100%;
-    height: auto;
-    display: block;
+    height: 300px;
+    object-fit: cover;
+    object-position: left;
   }
 }
 
