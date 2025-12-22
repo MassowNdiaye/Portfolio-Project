@@ -279,10 +279,29 @@ footer a:hover {
   margin: 0;
 }
 
+.reflection-content {
+  max-width: 800px;
+  margin: 20px auto 40px auto;
+  padding: 0 20px;
+  text-align: center;
+}
+.reflection-content h4 {
+  color: #1f2933;
+  font-size: 24px;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+.reflection-content p {
+  color: #4b5563;
+  font-size: 17px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
 /* --- RESUME PAGE --- */
 .title-center {
   text-align: center;
-  margin-top: 30px;
+  margin-top: 20px;
 }
 .title-center h1 {
   color: #1f2933;
@@ -302,6 +321,28 @@ footer a:hover {
   width: 100%;
   max-width: 800px;
   height: auto;
+}
+
+.download-btn {
+  text-align: center;
+  margin-bottom: 40px;
+}
+.download-btn .btn-download {
+  background-color: #2563eb;
+  color: #ffffff;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  text-decoration: none;
+  font-size: 16px;
+  cursor: pointer;
+}
+.download-btn .btn-download i {
+  margin-right: 8px;
+}
+.download-btn .btn-download:hover {
+  background-color: #dbe9ee;
+  color: #ffffff;
 }
 
 /* --- CONTACT PAGE --- */

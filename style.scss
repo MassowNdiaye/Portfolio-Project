@@ -316,10 +316,31 @@ footer {
   }
 }
 
+.reflection-content {
+  max-width: 800px;
+  margin: 20px auto 40px auto;
+  padding: 0 20px;
+  text-align: center;
+
+  h4 {
+    color: $primary-text;
+    font-size: 24px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+  }
+
+  p {
+    color: $secondary-text;
+    font-size: 17px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+}
+
 /* --- RESUME PAGE --- */
 .title-center {
   text-align: center;
-  margin-top: 30px;
+  margin-top: 20px;
 
   h1 {
     color: $primary-text;
@@ -339,6 +360,31 @@ footer {
     width: 100%;
     max-width: 800px;
     height: auto;
+  }
+}
+
+.download-btn {
+  text-align: center;
+  margin-bottom: 40px;
+
+  .btn-download {
+    background-color: $accent-color;
+    color: $background-color;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+
+    i {
+      margin-right: 8px;
+    }
+
+    &:hover {
+      background-color: #dbe9ee;
+      color: $background-color;
+    }
   }
 }
 
