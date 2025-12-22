@@ -31,9 +31,6 @@ main {
 
 /* --- Navigation Bar --- */
 header {
-  // position: sticky;
-  // top: 0;
-  // z-index: 10;
   padding: 20px 0;
   background-color: $secondary-color;
 
@@ -399,39 +396,167 @@ footer {
     margin: 0;
   }
 }
-input[type="text"],
-select,
-textarea {
-  width: 100%;
-  padding: 12px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
-  margin-top: 6px;
-  margin-bottom: 16px;
-  resize: vertical; /* Allow the user to vertically resize the textarea */
-}
-
-/* Submit button */
-input[type="submit"] {
-  background-color: $accent-color;
-  color: $background-color;
-  padding: 12px 20px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-input[type="submit"]:hover {
-  background-color: #dbe9ee;
-  color: $background-color;
-}
 
 /* Form color and design */
 .container {
-  display: flex;
+  display: block;
   gap: 20px;
   border-radius: 5px;
   padding: 20px;
   margin-bottom: 30px;
+
+  img {
+    margin-bottom: 15px;
+  }
+
+  input[type="text"],
+  select,
+  textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical; /* Allow the user to vertically resize the textarea */
+  }
+
+  /* Submit button */
+  input[type="submit"] {
+    display: block;
+    margin: 20px auto 0;
+    background-color: $accent-color;
+    color: $background-color;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  input[type="submit"]:hover {
+    background-color: #dbe9ee;
+    color: $background-color;
+  }
+}
+
+/* -----------------------------------------------------*/
+/* --- BREAKPOINTS/RESPONSIVNESS --- */
+@media (min-width: 800px) {
+  /* -------- HOMEPAGE --------*/
+
+  /* --- Navigation Bar --- */
+  header {
+    padding: 20px 0;
+    background-color: $secondary-color;
+
+    li {
+      font-size: 16px;
+    }
+  }
+
+  /* hero section */
+  .hero-container {
+    position: relative;
+    width: 100%;
+    img {
+      width: 100%;
+      height: 100%;
+      max-height: 800px;
+      object-fit: cover;
+    }
+  }
+
+  /* --- About Me Section --- */
+  .about-container {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 80px;
+
+    .about-me {
+      padding: 0;
+      h2 {
+        font-size: 40px;
+      }
+      p {
+        font-size: 26px;
+        margin: 0;
+        color: $secondary-text;
+      }
+    }
+  }
+
+  /* --- Projects Section --- */
+  .projects-container {
+    h4 {
+      font-size: 28px;
+    }
+    h1 {
+      font-size: 36px;
+      margin-bottom: 50px;
+    }
+  }
+  .video-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+
+    h2 {
+      font-size: 28px;
+    }
+    p {
+      font-size: 18px;
+    }
+    a {
+      font-size: 18px;
+    }
+  }
+
+  .video-container video {
+    width: 600px;
+  }
+
+  /* --- Learning More Section --- */
+
+  .learning {
+    padding: 80px 0px 80px 0px;
+
+    h1 {
+      font-size: 40px;
+    }
+
+    a {
+      font-size: 26px;
+    }
+  }
+
+  /* --- Tech Stack Section --- */
+  .tech-stack {
+    padding: 80px;
+    h2 {
+      font-size: 28px;
+    }
+
+    h4 {
+      font-size: 36px;
+    }
+  }
+
+  /* */
+  /* Form color and design */
+  .container {
+    display: flex;
+    justify-content: center;
+
+    form {
+      max-width: 500px;
+    }
+    img {
+      height: 600px;
+      margin-bottom: 15px;
+      max-width: 800px;
+      object-fit: cover;
+      object-position: left;
+    }
+  }
 }
