@@ -72,10 +72,10 @@
         </div>
         
         <div class="project3">
-          <video src="videos/MoneeSplit.mp4" autoplay muted loop playsinline></video>
+          <video src="videos/Back2Benefits.mp4" autoplay muted loop playsinline></video>
           <h2>Back2Benefits</h2>
           <p>Non-profit Team Project</p>
-          <a href="https://www.moneesplit.com/">View</a>
+          <a href="">View</a>
         </div>
 
 
@@ -123,6 +123,41 @@
           <i class="fa-brands fa-react" style="font-size:60px; color:#61DAFB;"></i>
           <i class="fa-brands fa-node-js" style="font-size:60px; color:#339933;"></i>
           <i class="fa-brands fa-git-alt" style="font-size:60px; color:#F05032;"></i>
+        </div>
+      </section>
+
+      <!-- CHATBOT -->
+      <!-- Chat Window -->
+      <div class="chat-container" id="chat-container">
+        <div class="chat-header">
+          <span>Chat with my Bot Assistant</span>
+          <span class="close-btn" onclick="toggleChat()">—</span>
+        </div>
+
+        <div id="chat-box"></div>
+        <div class="suggested-questions" id="suggested-questions">
+          <button onclick="clickSuggested('Who are you?')">Who are you?</button>
+          <button onclick="clickSuggested('What do you do?')">What do you do?</button>
+          <button onclick="clickSuggested('What skills do you have?')">Skills</button>
+          <button onclick="clickSuggested('What projects have you built?')">Projects</button>
+          <button onclick="clickSuggested('What are you studying?')">Education</button>
+          <button onclick="clickSuggested('How can I contact you?')">Contact</button>
+        </div>
+
+
+        <div class="input-area">
+          <input
+            type="text"
+            id="user-input"
+            placeholder="Ask about my skills, projects..."
+            onkeydown="if(event.key==='Enter') sendMessage()"
+          />
+          <button onclick="sendMessage()">Send</button>
+        </div>
+      </div>
+
+      <!-- Floating Reopen Button -->
+      <div id="chat-toggle" class="hidden" onclick="toggleChat()">💬</div>
     </main>
   
 
