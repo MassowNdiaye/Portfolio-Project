@@ -31,23 +31,56 @@ main {
 
 /* --- Navigation Bar --- */
 header {
-  padding: 20px 0;
   background-color: $secondary-color;
+  padding: 20px;
 
+  .nav-container {
+    display: flex;
+    justify-content: flex-end; // hamburger on the right
+    align-items: center;
+  }
+
+  /* Hamburger */
+  .hamburger {
+    background: none;
+    border: none;
+    color: $primary-text;
+    font-size: 26px;
+    cursor: pointer;
+    z-index: 1001;
+  }
+
+  /* Off-canvas mobile menu */
   ul {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
     background-color: $secondary-color;
-    padding: 10px 0;
+
+    list-style: none;
+    padding: 80px 20px;
     margin: 0;
-    text-align: end;
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    transform: translateX(100%); // hidden off screen
+    transition: transform 0.3s ease;
+    z-index: 1000;
   }
-  li {
-    display: inline;
-    margin-right: 20px;
+
+  ul.active {
+    transform: translateX(0); // slide in
   }
+
   a {
     color: $primary-text;
     text-decoration: none;
-    font-weight: lighter; //Fix bold issue
+    font-weight: lighter;
+
     &:hover {
       color: $accent-color;
     }
@@ -439,11 +472,27 @@ footer {
 
   /* --- Navigation Bar --- */
   header {
-    padding: 20px 0;
-    background-color: $secondary-color;
+    .hamburger {
+      display: none;
+    }
+
+    .nav-container {
+      justify-content: flex-end;
+    }
+
+    ul {
+      position: static; // remove fixed
+      height: auto;
+      width: auto;
+      transform: none; // cancel translateX
+      display: flex;
+      flex-direction: row;
+      padding: 10px;
+      background: none;
+    }
 
     li {
-      font-size: 16px;
+      margin-left: 20px;
     }
   }
 
@@ -490,7 +539,7 @@ footer {
   }
   .video-container {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 20px;
 
     h2 {
@@ -505,7 +554,7 @@ footer {
   }
 
   .video-container video {
-    width: 600px;
+    width: 400px;
   }
 
   /* --- Learning More Section --- */
