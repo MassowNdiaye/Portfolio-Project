@@ -32,12 +32,16 @@ main {
 /* --- Navigation Bar --- */
 header {
   background-color: $secondary-color;
-  padding: 20px;
+  padding: 0px 20px;
 
   .nav-container {
     display: flex;
-    justify-content: flex-end; // hamburger on the right
+    justify-content: space-between; // hamburger on the right
     align-items: center;
+  }
+
+  .logo img {
+    height: 70px; // adjust as needed
   }
 
   /* Hamburger */
@@ -477,7 +481,17 @@ footer {
     }
 
     .nav-container {
-      justify-content: flex-end;
+      justify-content: space-between; // logo left, links right
+      padding: 10px;
+    }
+
+    .logo {
+      position: static;
+      transform: none;
+    }
+
+    .logo img {
+      height: 60px;
     }
 
     ul {

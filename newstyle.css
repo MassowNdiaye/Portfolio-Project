@@ -26,12 +26,15 @@ main {
 /* --- Navigation Bar --- */
 header {
   background-color: #e5e7eb;
-  padding: 20px;
+  padding: 0px 20px;
 }
 header .nav-container {
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
   align-items: center;
+}
+header .logo img {
+  height: 70px;
 }
 header {
   /* Hamburger */
@@ -428,7 +431,15 @@ footer a:hover {
     display: none;
   }
   header .nav-container {
-    justify-content: flex-end;
+    justify-content: space-between;
+    padding: 10px;
+  }
+  header .logo {
+    position: static;
+    transform: none;
+  }
+  header .logo img {
+    height: 60px;
   }
   header ul {
     position: static;
