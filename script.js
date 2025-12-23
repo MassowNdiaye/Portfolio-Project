@@ -25,8 +25,8 @@ const aboutMe = {
   education: ["Road to Hire Apprenticeship"],
   contact: {
     email: "massow.ndiaye3011@email.com",
-    github: "https://github.com/yourusername",
-    linkedin: "https://www.linkedin.com/in/yourlinkedin/",
+    github: "https://github.com/MassowNdiaye",
+    linkedin: "https://www.linkedin.com/in/elhadji-massow-ndiaye-b11397299/e",
   },
 };
 
