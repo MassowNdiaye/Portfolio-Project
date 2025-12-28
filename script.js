@@ -1,3 +1,4 @@
+// Hamburger Menu + icon func //
 const hamburger = document.querySelector(".hamburger");
 const navLinks = document.querySelector(".nav-links");
 const icon = hamburger.querySelector("i");
@@ -8,6 +9,25 @@ hamburger.addEventListener("click", () => {
   icon.classList.toggle("fa-bars");
   icon.classList.toggle("fa-xmark");
 });
+
+// Slider func //
+let currentSlide = 0;
+const slides = document.querySelectorAll(".slide");
+
+function showSlide(index) {
+  slides.forEach((slide) => slide.classList.remove("active"));
+  slides[index].classList.add("active");
+}
+
+function nextSlide() {
+  currentSlide = (currentSlide + 1) % slides.length;
+  showSlide(currentSlide);
+}
+
+function prevSlide() {
+  currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+  showSlide(currentSlide);
+}
 
 // ChatBot Logic //
 const aboutMe = {
@@ -105,7 +125,7 @@ function getBotResponse(message) {
     return `You can contact Elhadji via:\nEmail: ${aboutMe.contact.email}\nGitHub: ${aboutMe.contact.github}\nLinkedIn: ${aboutMe.contact.linkedin}`;
   }
 
-  // Default fallback
+  // Default message
   return "I’m here to answer questions about Elhadji! Try asking about his skills, projects, education, or contact info.";
 }
 
@@ -125,5 +145,5 @@ function sendMessage() {
   }, 400);
 }
 
-// Initial greeting
+// Initial message
 addMessage("Hi! I’m Elhadji’s assistant 🤖 Ask me anything about him!", "bot");

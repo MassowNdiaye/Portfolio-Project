@@ -36,7 +36,9 @@ header .nav-container {
 header .logo img {
   height: 70px;
 }
-
+header {
+  /* Hamburger */
+}
 header .hamburger {
   background: none;
   border: none;
@@ -45,7 +47,9 @@ header .hamburger {
   cursor: pointer;
   z-index: 1001;
 }
-
+header {
+  /* mobile menu */
+}
 header ul {
   position: fixed;
   top: 0;
@@ -181,7 +185,7 @@ header a:hover {
 
 .video-container video {
   width: 250px;
-  flex-shrink: 0; /* prevents shrinking */
+  flex-shrink: 0;
   border-radius: 8px;
 }
 
@@ -213,11 +217,77 @@ header a:hover {
   color: #1f2933;
 }
 
+/* Certification Slider container */
+.certifications {
+  text-align: center;
+  margin-top: 30px;
+}
+.certifications h2 {
+  color: #1f2933;
+  font-size: 18px;
+  margin: 0px;
+}
+.certifications h4 {
+  color: #4b5563;
+  font-size: 20px;
+}
+.certifications .slider-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.certifications .slider {
+  width: 100%;
+  position: relative;
+}
+.certifications {
+  /* Slides */
+}
+.certifications .slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  opacity: 0;
+  transition: opacity 0.6s ease-in-out;
+}
+.certifications {
+  /* Active slide */
+}
+.certifications .slide.active {
+  opacity: 1;
+  position: relative;
+}
+.certifications {
+  /* Buttons */
+}
+.certifications .prev,
+.certifications .next {
+  background: #ffffff;
+  color: #2563eb;
+  border: none;
+  padding: 10px 14px;
+  font-size: 20px;
+  cursor: pointer;
+  border-radius: 50%;
+  user-select: none;
+  flex-shrink: 0;
+}
+.certifications .prev:hover,
+.certifications .next:hover {
+  background: #2563eb;
+  color: #ffffff;
+}
+
 /* --- Tech Stack Section --- */
 .tech-stack {
   padding: 20px;
   background-color: #ffffff;
   text-align: center;
+  margin-top: 20px;
   margin-bottom: 20px;
 }
 .tech-stack h2 {
@@ -388,7 +458,7 @@ footer a:hover {
 .container img {
   margin-bottom: 15px;
 }
-.container input[type="text"],
+.container input[type=text],
 .container select,
 .container textarea {
   width: 100%;
@@ -400,8 +470,10 @@ footer a:hover {
   margin-bottom: 16px;
   resize: vertical; /* Allow the user to vertically resize the textarea */
 }
-
-.container input[type="submit"] {
+.container {
+  /* Submit button */
+}
+.container input[type=submit] {
   display: block;
   margin: 20px auto 0;
   background-color: #2563eb;
@@ -411,9 +483,142 @@ footer a:hover {
   border-radius: 4px;
   cursor: pointer;
 }
-.container input[type="submit"]:hover {
+.container input[type=submit]:hover {
   background-color: #dbe9ee;
   color: #ffffff;
+}
+
+/* CHATBOT */
+/* Chat Window */
+.chat-container {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 350px;
+  height: 480px; /* fixed height for scrollable content */
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+  z-index: 1000;
+}
+
+/* Header */
+.chat-header {
+  background: #007bff;
+  color: white;
+  padding: 12px;
+  border-radius: 12px 12px 0 0;
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+}
+
+/* Chat Messages */
+#chat-box {
+  flex: 1;
+  padding: 10px;
+  overflow-y: auto; /* scrollable messages */
+  background: #f4f6f8;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Message */
+.message {
+  max-width: 80%;
+  padding: 8px 12px;
+  border-radius: 16px;
+  margin-bottom: 8px;
+  font-size: 14px;
+  word-wrap: break-word;
+}
+
+.user {
+  background: #007bff;
+  color: white;
+  align-self: flex-end;
+  margin-left: auto;
+}
+
+.bot {
+  background: #e0e0e0;
+  color: #333;
+  align-self: flex-start;
+}
+
+/* Input area */
+.input-area {
+  display: flex;
+  padding: 8px;
+  border-top: 1px solid #ddd;
+}
+
+input {
+  flex: 1;
+  padding: 8px;
+  border-radius: 20px;
+  border: 1px solid #ccc;
+}
+
+button {
+  margin-left: 6px;
+  border-radius: 20px;
+  background: #007bff;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  cursor: pointer;
+}
+
+/* Close button */
+.close-btn {
+  cursor: pointer;
+}
+
+/* Floating reopen button */
+#chat-toggle {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 55px;
+  height: 55px;
+  background: #007bff;
+  color: white;
+  font-size: 26px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.hidden {
+  display: none;
+}
+
+/* Suggested questions */
+.suggested-questions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 6px;
+}
+
+.suggested-questions button {
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  padding: 6px 12px;
+  cursor: pointer;
+  font-size: 13px;
+  margin-bottom: 8px;
+}
+
+.suggested-questions button:hover {
+  background: #0056b3;
 }
 
 /* -----------------------------------------------------*/
@@ -511,6 +716,15 @@ footer a:hover {
   .learning a {
     font-size: 26px;
   }
+  .certifications h2 {
+    font-size: 28px;
+  }
+  .certifications h4 {
+    font-size: 36px;
+  }
+  .certifications .slider {
+    max-width: 600px;
+  }
   /* --- Tech Stack Section --- */
   .tech-stack {
     padding: 80px;
@@ -539,135 +753,4 @@ footer a:hover {
   }
 }
 
-/* CHATBOT */
-/* Chat Window */
-.chat-container {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  width: 350px;
-  height: 480px; /* fixed height for scrollable content */
-  background: white;
-  border-radius: 12px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
-  display: flex;
-  flex-direction: column;
-  z-index: 1000;
-}
-
-/* Header */
-.chat-header {
-  background: #007bff;
-  color: white;
-  padding: 12px;
-  border-radius: 12px 12px 0 0;
-  display: flex;
-  justify-content: space-between;
-  font-weight: bold;
-}
-
-/* Chat Messages */
-#chat-box {
-  flex: 1;
-  padding: 10px;
-  overflow-y: auto; /* scrollable messages */
-  background: #f4f6f8;
-  display: flex;
-  flex-direction: column;
-}
-
-/* Message bubbles */
-.message {
-  max-width: 80%;
-  padding: 8px 12px;
-  border-radius: 16px;
-  margin-bottom: 8px;
-  font-size: 14px;
-  word-wrap: break-word;
-}
-
-.user {
-  background: #007bff;
-  color: white;
-  align-self: flex-end;
-  margin-left: auto;
-}
-
-.bot {
-  background: #e0e0e0;
-  color: #333;
-  align-self: flex-start;
-}
-
-/* Input area */
-.input-area {
-  display: flex;
-  padding: 8px;
-  border-top: 1px solid #ddd;
-}
-
-input {
-  flex: 1;
-  padding: 8px;
-  border-radius: 20px;
-  border: 1px solid #ccc;
-}
-
-button {
-  margin-left: 6px;
-  border-radius: 20px;
-  background: #007bff;
-  color: white;
-  border: none;
-  padding: 8px 14px;
-  cursor: pointer;
-}
-
-/* Close button */
-.close-btn {
-  cursor: pointer;
-}
-
-/* Floating reopen button */
-#chat-toggle {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  width: 55px;
-  height: 55px;
-  background: #007bff;
-  color: white;
-  font-size: 26px;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
-}
-
-.hidden {
-  display: none;
-}
-
-/* Suggested questions inside bot message */
-.suggested-questions {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
-  margin-top: 6px;
-}
-
-.suggested-questions button {
-  background: #007bff;
-  color: white;
-  border: none;
-  border-radius: 20px;
-  padding: 6px 12px;
-  cursor: pointer;
-  font-size: 13px;
-  margin-bottom: 8px;
-}
-
-.suggested-questions button:hover {
-  background: #0056b3;
-}
+/*# sourceMappingURL=newstyle.css.map */
