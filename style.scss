@@ -220,11 +220,11 @@ header {
 /* --- Learning More Section --- */
 .learning {
   padding: 50px 40px 50px 40px;
-  background-color: $secondary-color;
+  background-color: $accent-color;
   text-align: center;
 
   h1 {
-    color: $primary-text;
+    color: $secondary-color;
     font-size: 28px;
     margin: 0px;
   }
@@ -232,7 +232,7 @@ header {
   a {
     font-size: 18px;
     margin: 0 0px 40px;
-    color: $accent-color;
+    color: $primary-text;
   }
 
   i {
@@ -245,9 +245,12 @@ header {
 }
 
 /* Certification Slider container */
+
 .certifications {
   text-align: center;
-  margin-top: 30px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background: $secondary-color;
   h2 {
     color: $primary-text;
     font-size: 18px;
@@ -771,7 +774,6 @@ button {
   }
 
   /* --- Learning More Section --- */
-
   .learning {
     padding: 80px 0px 80px 0px;
 
@@ -785,12 +787,20 @@ button {
   }
 
   .certifications {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 80px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    gap: 100px;
     h2 {
       font-size: 28px;
     }
 
     h4 {
       font-size: 36px;
+      max-width: 450px;
     }
 
     .slider {
