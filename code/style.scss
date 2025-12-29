@@ -3,7 +3,7 @@ $background-color: #ffffff;
 $secondary-color: #e5e7eb;
 $primary-text: #1f2933;
 $secondary-text: #4b5563;
-$accent-color: #2563eb;
+$accent-color: #3b82f6;
 $font-family: "Varela Round", sans-serif;
 
 html,
@@ -214,13 +214,13 @@ header {
 }
 
 .video-container::-webkit-scrollbar {
-  display: none; /* Chrome, Safari */
+  height: 0; /* Chrome, Safari */
 }
 
 /* --- Learning More Section --- */
 .learning {
   padding: 50px 40px 50px 40px;
-  background-color: $accent-color;
+  background-color: #3b82f6;
   text-align: center;
 
   h1 {
@@ -556,7 +556,7 @@ footer {
 
 /* Header */
 .chat-header {
-  background: #007bff;
+  background: $accent-color;
   color: white;
   padding: 12px;
   border-radius: 12px 12px 0 0;
@@ -586,7 +586,7 @@ footer {
 }
 
 .user {
-  background: #007bff;
+  background: $accent-color;
   color: white;
   align-self: flex-end;
   margin-left: auto;
@@ -615,7 +615,7 @@ input {
 button {
   margin-left: 6px;
   border-radius: 20px;
-  background: #007bff;
+  background: $accent-color;
   color: white;
   border: none;
   padding: 8px 14px;
@@ -634,7 +634,7 @@ button {
   right: 20px;
   width: 55px;
   height: 55px;
-  background: #007bff;
+  background: $accent-color;
   color: white;
   font-size: 26px;
   border-radius: 50%;
@@ -657,7 +657,7 @@ button {
 }
 
 .suggested-questions button {
-  background: #007bff;
+  background: $accent-color;
   color: white;
   border: none;
   border-radius: 20px;
@@ -668,7 +668,7 @@ button {
 }
 
 .suggested-questions button:hover {
-  background: #0056b3;
+  background: $accent-color;
 }
 
 /* -----------------------------------------------------*/

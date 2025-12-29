@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Resume Page</title>
+    <title>Reflection Page</title>
     <link
       href="https://fonts.googleapis.com/css?family=Oswald:300,700|Varela+Round"
       rel="stylesheet"
@@ -17,10 +17,10 @@
   </head>
   <body>
     <!--Navigation Bar-->
-     <header>
+    <header>
       <div class="nav-container">
       <div class="logo">
-        <a href="index.html"><img src="images/logo.png" alt="Site Logo"></a>
+        <a href="index.html"><img src="/images/logo.png" alt="Site Logo"></a>
       </div>
       <div class="nav-container">
       <button class="hamburger" aria-label="Menu">
@@ -36,20 +36,41 @@
       </div>
     </header>
 
-    <!--Resume Page-->
+    <!--Page Title-->
     <main>
-      <div class="title-center">
-        <h1>My Resume</h1>
+      <div class="reflection-title">
+        <h1>My Reflection</h1>
       </div>
 
-      <div class="resume">
-        <img src="images/Technical Resume.jpg" width="100%" alt="" />
-      </div>
+      <!-- Flexbox Section (Professional, Technical, Personal Development)  -->
+      <div class="reflection-content">
+        <div class="flexbox">
+          <h4 class="box-title">Professional Development:</h4>
+          <p>
+            I realized how important communication, collaboration and
+            organization are in this enviroment. Moving forward I aim to keep
+            improving my professional skills by seeking mentorship and
+            networking.
+          </p>
+        </div>
 
-      <div class="download-btn">
-        <a href="images/Technical Resume.jpg" download class="btn-download">
-          <i class="fa fa-download"></i> Download My Resume
-        </a>
+        <div class="flexbox">
+          <h4 class="box-title">Technical Development:</h4>
+          <p>
+            The onboarding process showed me that learning the basics in
+            programming, creates a solid base for continuos improvement. I plan
+            to strengthen my technical skills with consistent practice.
+          </p>
+        </div>
+
+        <div class="flexbox">
+          <h4 class="box-title">Personal Development:</h4>
+          <p>
+            I learned that stepping outside my comfort zone and embracing new
+            challenges helps me build confidence and resilience. The future goal
+            is to commit myself and get out of my comfortzone more often.
+          </p>
+        </div>
       </div>
     </main>
 

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Reflection Page</title>
+    <title>Contact Page</title>
     <link
       href="https://fonts.googleapis.com/css?family=Oswald:300,700|Varela+Round"
       rel="stylesheet"
@@ -20,7 +20,7 @@
     <header>
       <div class="nav-container">
       <div class="logo">
-        <a href="index.html"><img src="images/logo.png" alt="Site Logo"></a>
+        <a href="index.html"><img src="/images/logo.png" alt="Site Logo"></a>
       </div>
       <div class="nav-container">
       <button class="hamburger" aria-label="Menu">
@@ -38,38 +38,63 @@
 
     <!--Page Title-->
     <main>
-      <div class="reflection-title">
-        <h1>My Reflection</h1>
+      <div class="page-title">
+        <h1>Contact Form</h1>
       </div>
 
-      <!-- Flexbox Section (Professional, Technical, Personal Development)  -->
-      <div class="reflection-content">
-        <div class="flexbox">
-          <h4 class="box-title">Professional Development:</h4>
-          <p>
-            I realized how important communication, collaboration and
-            organization are in this enviroment. Moving forward I aim to keep
-            improving my professional skills by seeking mentorship and
-            networking.
-          </p>
+      <!--Contact Form-->
+      <div class="container">
+        <div class="contact-img">
+          <img src="/images/contact.png" width="100%" />
         </div>
+        <div class="form">
+          <form action="action_page.php">
+            <!--firstname-->
+            <label for="fname">First Name:</label>
+            <input
+              type="text"
+              id="fname"
+              name="firstname"
+              placeholder="Your name.."
+            />
 
-        <div class="flexbox">
-          <h4 class="box-title">Technical Development:</h4>
-          <p>
-            The onboarding process showed me that learning the basics in
-            programming, creates a solid base for continuos improvement. I plan
-            to strengthen my technical skills with consistent practice.
-          </p>
-        </div>
+            <!--lastname-->
+            <label for="lname">Last Name:</label>
+            <input
+              type="text"
+              id="lname"
+              name="lastname"
+              placeholder="Your last name.."
+            />
 
-        <div class="flexbox">
-          <h4 class="box-title">Personal Development:</h4>
-          <p>
-            I learned that stepping outside my comfort zone and embracing new
-            challenges helps me build confidence and resilience. The future goal
-            is to commit myself and get out of my comfortzone more often.
-          </p>
+            <!--Phone number-->
+            <label for="phone-num">Phone Number:</label>
+            <input
+              type="text"
+              id="phone-num"
+              name="phone-num"
+              placeholder="Your phone number.."
+            />
+
+            <!--email-->
+            <label for="email">Email:</label>
+            <input
+              type="text"
+              id="email"
+              name="email"
+              placeholder="Your email.."
+            />
+
+            <label for="Comments">Comments:</label>
+            <textarea
+              id="Comments"
+              name="Comments"
+              placeholder="Write something.."
+              style="height: 200px"
+            ></textarea>
+
+            <input type="submit" value="Submit" />
+          </form>
         </div>
       </div>
     </main>

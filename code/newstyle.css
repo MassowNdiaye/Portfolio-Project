@@ -76,7 +76,7 @@ header a {
   font-weight: lighter;
 }
 header a:hover {
-  color: #2563eb;
+  color: #3b82f6;
 }
 
 /* --- Hero Section --- */
@@ -112,7 +112,7 @@ header a:hover {
 }
 .about-container .about-me i {
   margin-top: 15px;
-  color: #2563eb;
+  color: #3b82f6;
 }
 
 .contact-me {
@@ -124,7 +124,7 @@ header a:hover {
   margin: 0;
 }
 .contact-me a {
-  color: #2563eb;
+  color: #3b82f6;
   text-decoration: none;
   font-size: 20px;
   display: block;
@@ -174,7 +174,7 @@ header a:hover {
   margin: 5px;
 }
 .video-container a {
-  color: #2563eb;
+  color: #3b82f6;
   font-size: 16px;
   margin-bottom: 10px;
   display: inline-block;
@@ -190,13 +190,13 @@ header a:hover {
 }
 
 .video-container::-webkit-scrollbar {
-  display: none; /* Chrome, Safari */
+  height: 0; /* Chrome, Safari */
 }
 
 /* --- Learning More Section --- */
 .learning {
   padding: 50px 40px 50px 40px;
-  background-color: #2563eb;
+  background-color: #3b82f6;
   text-align: center;
 }
 .learning h1 {
@@ -211,7 +211,7 @@ header a:hover {
 }
 .learning i {
   margin: 0 15px;
-  color: #2563eb;
+  color: #3b82f6;
 }
 .learning i:hover {
   color: #1f2933;
@@ -269,7 +269,7 @@ header a:hover {
 .certifications .prev,
 .certifications .next {
   background: #ffffff;
-  color: #2563eb;
+  color: #3b82f6;
   border: none;
   padding: 10px 14px;
   font-size: 20px;
@@ -280,7 +280,7 @@ header a:hover {
 }
 .certifications .prev:hover,
 .certifications .next:hover {
-  background: #2563eb;
+  background: #3b82f6;
   color: #ffffff;
 }
 
@@ -313,7 +313,7 @@ header a:hover {
   color: #1f2933;
 }
 .tech-stack .tech-icons i:hover {
-  color: #2563eb;
+  color: #3b82f6;
 }
 
 /* --- Footer Section --- */
@@ -341,7 +341,7 @@ footer a {
   font-weight: lighter;
 }
 footer a:hover {
-  color: #2563eb;
+  color: #3b82f6;
 }
 
 .footer-icons {
@@ -421,7 +421,7 @@ footer a:hover {
   margin-bottom: 40px;
 }
 .download-btn .btn-download {
-  background-color: #2563eb;
+  background-color: #3b82f6;
   color: #ffffff;
   padding: 12px 20px;
   border: none;
@@ -478,7 +478,7 @@ footer a:hover {
 .container input[type=submit] {
   display: block;
   margin: 20px auto 0;
-  background-color: #2563eb;
+  background-color: #3b82f6;
   color: #ffffff;
   padding: 12px 20px;
   border: none;
@@ -508,7 +508,7 @@ footer a:hover {
 
 /* Header */
 .chat-header {
-  background: #007bff;
+  background: #3b82f6;
   color: white;
   padding: 12px;
   border-radius: 12px 12px 0 0;
@@ -538,7 +538,7 @@ footer a:hover {
 }
 
 .user {
-  background: #007bff;
+  background: #3b82f6;
   color: white;
   align-self: flex-end;
   margin-left: auto;
@@ -567,7 +567,7 @@ input {
 button {
   margin-left: 6px;
   border-radius: 20px;
-  background: #007bff;
+  background: #3b82f6;
   color: white;
   border: none;
   padding: 8px 14px;
@@ -586,7 +586,7 @@ button {
   right: 20px;
   width: 55px;
   height: 55px;
-  background: #007bff;
+  background: #3b82f6;
   color: white;
   font-size: 26px;
   border-radius: 50%;
@@ -609,7 +609,7 @@ button {
 }
 
 .suggested-questions button {
-  background: #007bff;
+  background: #3b82f6;
   color: white;
   border: none;
   border-radius: 20px;
@@ -620,7 +620,7 @@ button {
 }
 
 .suggested-questions button:hover {
-  background: #0056b3;
+  background: #3b82f6;
 }
 
 /* -----------------------------------------------------*/
