@@ -97,6 +97,7 @@ header {
   width: 100%;
 
   img {
+    display: block;
     width: 100%;
     object-fit: cover;
   }
@@ -160,7 +161,7 @@ header {
   display: block;
   text-align: center;
   background-color: $background-color;
-  margin-top: 30px;
+  margin-top: 20px;
 
   h4 {
     color: $primary-text;
@@ -192,6 +193,7 @@ header {
     font-weight: 100;
     color: $primary-text;
     margin: 0px;
+    margin-top: 10px;
   }
 
   p {
@@ -265,6 +267,7 @@ header {
   h4 {
     color: $secondary-text;
     font-size: 20px;
+    margin-top: 20px;
     font-weight: 100;
   }
 
@@ -324,7 +327,7 @@ header {
   padding: 20px;
   background-color: $background-color;
   text-align: center;
-  margin-top: 20px;
+  margin-top: 0px;
   margin-bottom: 20px;
 
   h2 {
@@ -363,7 +366,7 @@ footer {
   padding: 20px;
 
   ul {
-    display: flex;
+    display: block;
     justify-content: center;
     padding: 10px 0px px 0px;
     margin: 0;
@@ -372,6 +375,8 @@ footer {
 
   li {
     margin-right: 20px;
+    text-align: center;
+    margin-bottom: 10px;
   }
 
   h4 {
@@ -382,6 +387,7 @@ footer {
 
   a {
     color: $primary-text;
+    text-decoration: none;
     font-weight: lighter; //Fix bold issue
     &:hover {
       color: $accent-color;
@@ -758,6 +764,7 @@ button {
 
   /* --- Projects Section --- */
   .projects-container {
+    margin-top: 40px;
     h4 {
       font-size: 28px;
     }
@@ -848,6 +855,11 @@ button {
       max-width: 800px;
       object-fit: cover;
       object-position: left;
+    }
+  }
+  footer {
+    ul {
+      display: flex;
     }
   }
 }
