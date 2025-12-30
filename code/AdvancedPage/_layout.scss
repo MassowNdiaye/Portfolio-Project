@@ -80,9 +80,14 @@ header {
   background-color: $background-color;
   flex: 1;
   height: 100vh;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
 }
 
 .detail {
+  flex: 1;
+  box-sizing: border-box;
   padding: 4.5rem;
   background-color: $background-color;
 }
