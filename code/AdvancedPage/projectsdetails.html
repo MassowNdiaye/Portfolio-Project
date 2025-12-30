@@ -31,29 +31,31 @@
     </div>
     </header>
     
+    <!-- SIDEBAR-->
     <div class="content">
       <nav class="sidebar">
         <ul class="side-nav">
           <li class="side-nav_item side-nav_item--active">
-            <a href="#" class="side-nav_link">Road2Supercar</a>
+            <a href="#" class="side-nav_link" data-project="Road2Supercar">Road2Supercar</a>
           </li>
           <li class="side-nav_item">
-            <a href="#" class="side-nav_link">MoneeSplit</a>
+            <a href="#" class="side-nav_link" data-project="MoneeSplit">MoneeSplit</a>
           </li>
           <li class="side-nav_item">
-            <a href="#" class="side-nav_link">Back2Benefits</a>
+            <a href="#" class="side-nav_link" data-project="Back2Benefits">Back2Benefits</a>
           </li>
           <li class="side-nav_item">
-            <a href="#" class="side-nav_link">Online Calculator</a>
+            <a href="#" class="side-nav_link" data-project="OnlineCalculator">Online Calculator</a>
           </li>
           <li class="side-nav_item">
-            <a href="#" class="side-nav_link">Online Game</a>
+            <a href="#" class="side-nav_link" data-project="OnlineGame">Online Game</a>
           </li>
         </ul>
       </nav>
     
+      <!-- IMAGE GALLERY-->
       <main class="projects-view">
-        <div class="gallery">
+        <div class="gallery" id="gallery">
           <div class="gallery_item">
             <img src="img/R2Supercar1.png" alt="" class="gallery_photo">
           </div>
@@ -67,39 +69,38 @@
           </div>
         </div>
 
+        <!-- PROJECT OVERVIEW-->
         <div class="overview">
           <div class="overview_title">
-            <h1>R2Supercar</h1>
+            <h1 id="project-title">R2Supercar</h1>
           </div>
       
           <div class="overview_live">
-            <a href="">View live</a>
+            <a id="project-live" href="https://main.d3s91fm4pflf76.amplifyapp.com/">View live</a>
           </div>
 
           <div class="overview_gitHub">
-            <a href=""><i class="fa-brands fa-github"></i></a>
+            <a id="project-github" href="https://github.com/MassowNdiaye/Ecommerce-V1"><i class="fa-brands fa-github"></i></a>
           </div>
         </div>
 
+        <!-- DESCRIPTION / INFO SECTION-->
         <div class="detail">
           <div class="description">
-            <p class="paragraph">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Est neque ad molestias delectus dolor nisi veritatis facere alias. Voluptate aspernatur quisquam eligendi eius reiciendis ducimus iure, iusto aliquid autem necessitatibus!
-            </p>
-            <p class="paragraph">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam molestiae alias ratione nemo? Alias velit placeat reiciendis. Odio totam velit consequatur fuga maiores corporis autem consequuntur nulla, officia, voluptatibus soluta!
-            </p>
+            <h2>Description:</h2>
+            <div id="project-description"></div>
 
-            <ul class="list">
-              <li class="list_item">Info 1</li>
-              <li class="list_item">Info 1</li>
-              <li class="list_item">Info 1</li>
-              <li class="list_item">Info 1</li>
-              <li class="list_item">Info 1</li>
-              <li class="list_item">Info 1</li>
-              <li class="list_item">Info 1</li>
-              <li class="list_item">Info 1</li>
-            </ul>
+              <div class="list">
+                <div class="tech-stack">
+                  <h2>Tech Stack:</h2>
+                  <ul id="tech-stack"></ul>
+                </div>
+
+                <div class="project-info">
+                  <h2>Features:</h2>
+                  <ul id="project-info"></ul>
+                </div>
+              </div>
           </div>
         </div>
 
@@ -131,5 +132,8 @@
     
   <!--JavaScript Connection-->
   <script src="/code/RegularPages/script.js"></script>
+
+  <!--JSON File Connection-->
+  <script src="project.js"></script>
   </body>
 </html>

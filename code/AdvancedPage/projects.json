@@ -1,0 +1,109 @@
+{
+  "Road2Supercar": {
+    "title": "Road2Supercar",
+    "live": "https://main.d3s91fm4pflf76.amplifyapp.com/",
+    "github": "https://github.com/MassowNdiaye/Ecommerce-V1",
+    "images": [
+      "img/R2Supercar1.png",
+      "img/R2Supercar2.png",
+      "img/R2Supercar3.png"
+    ],
+    "description": [
+      "I designed and developed a dealership eCommerce platform focused on usability, performance, and conversion optimization. Customers can easily browse inventory, access detailed product or vehicle information, and complete inquiries or transactions online.",
+      "The platform features responsive design, fast load times, and streamlined navigation to ensure a smooth experience across all devices. This project demonstrates my ability to build scalable, user-friendly eCommerce systems tailored to dealership businesses."
+    ],
+
+    "tech": ["HTML5", "CSS3", "JavaScript", "GitHub"],
+    "info": [
+      "Responsive design",
+      "AWS Amplify hosting",
+      "JSON file for product listings, preventing hard-coding"
+    ]
+  },
+
+  "MoneeSplit": {
+    "title": "MoneeSplit",
+    "live": "https://www.moneesplit.com/",
+    "github": "https://github.com/MassowNdiaye/MoneeSplit-V1",
+    "images": [
+      "img/MoneeSplit1.png",
+      "img/MoneeSplit2.png",
+      "img/MoneeSplit3.png"
+    ],
+    "description": [
+      "Budgeting app that allows users to input their paycheck and instantly see how money is allocated across categories such as savings, bills, personal spending, and investments.",
+      "This project began as a personal need for a cleaner, faster way to visualize paycheck distribution and is now being developed into a full-featured budgeting solution.."
+    ],
+    "tech": ["TypeScript", "React", "CSS3", "HTML5", "GitHub", "Node.js"],
+    "info": [
+      "UI/UX implementation from Figma",
+      "Real-world problem solving",
+      "App architecture",
+      "Reduce Financial Stress"
+    ]
+  },
+
+  "Back2Benefits": {
+    "title": "Back2Benefits (TEAM PROJECT)",
+    "live": "#",
+    "github": "https://github.com/MassowNdiaye/Back2Benefits",
+    "images": [
+      "img/Back2Benefits1.png",
+      "img/Back2Benefits2.png",
+      "img/Back2Benefits3.png"
+    ],
+    "description": [
+      "Non-profit website created to support individuals and families who are struggling after the reduction or discontinuation of SNAP (Supplemental Nutrition Assistance Program) benefits.",
+      "The platform connects users with resources, volunteer opportunities, and donation options, helping communities access the support they need during difficult times."
+    ],
+    "tech": ["HTML5", "CSS3", "JavaScript", "GitHub"],
+    "info": [
+      "Responsive Design",
+      "Volunteer Form",
+      "News Page",
+      "Donation Form",
+      "Resource Page",
+      "Homepage"
+    ]
+  },
+
+  "OnlineCalculator": {
+    "title": "Online Calculator",
+    "live": "https://main.dkadwp70dcdax.amplifyapp.com/",
+    "github": "https://github.com/MassowNdiaye/Calculator-Challenge",
+    "images": [
+      "img/Calculator1.png",
+      "img/Calculator3.png",
+      "img/Calculator2.png"
+    ],
+    "description": [
+      "A simple and interactive online calculator this calculator mimics a small handheld calculator and supports basic arithmetic operations. Users can also view a history of their previous calculations."
+    ],
+    "tech": ["HTML5", "CSS3", "JavaScript"],
+    "info": [
+      "Basic arithmetic operations: Addition, Subtraction, Multiplication, Division",
+      "Clear all button to start a new operation (CLEAR)",
+      "History list showing previous calculations",
+      "Simple and user-friendly interface"
+    ]
+  },
+
+  "OnlineGame": {
+    "title": "Online Game (Rock, Paper, Scissors)",
+    "live": "https://main.d3p2i3dzubtud.amplifyapp.com/",
+    "github": "https://github.com/MassowNdiaye/Rock_Paper_Scissors",
+    "images": ["img/Game1.png", "img/Game2.png", "img/Game3.png"],
+    "description": [
+      "A simple and interactive Rock, Paper, Scissors game. The user type their choice, the computer generates a random one, and the game determines the winner."
+    ],
+    "tech": ["HTML5", "CSS3", "JavaScript"],
+    "info": [
+      "User vs Computer game",
+      "Manual user input (Rock, Paper, Scissors)",
+      "Score tracking for both user and computer",
+      "Display computer choice",
+      "Result message (Win/lose/tie)",
+      "Reset button to restart"
+    ]
+  }
+}

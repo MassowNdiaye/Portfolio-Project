@@ -279,15 +279,10 @@ footer a:hover {
 }
 
 .list {
-  list-style: none;
-  margin: 20px 0px 0px 0px;
-  padding-top: 40px;
-  border-top: solid 1px #e5e7eb;
   display: flex;
-  flex-wrap: wrap;
-}
-.list_item {
-  flex: 0 0 50%;
+  gap: 200px;
+  padding-top: 20px;
+  border-top: solid 1px #e5e7eb;
 }
 
 /*# sourceMappingURL=advance.css.map */
