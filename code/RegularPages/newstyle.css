@@ -102,6 +102,7 @@ header a:hover {
 }
 .about-container .about-me h2 {
   color: #1f2933;
+  font-weight: 300;
   margin-bottom: 20px;
   margin: 0;
 }
@@ -121,6 +122,7 @@ header a:hover {
 .contact-me h4 {
   color: #1f2933;
   font-size: 36px;
+  font-weight: 300;
   margin: 0;
 }
 .contact-me a {
@@ -149,6 +151,7 @@ header a:hover {
 .projects-container h1 {
   color: #4b5563;
   font-size: 24px;
+  font-weight: 300;
   margin-top: 0;
   margin-bottom: 10px;
 }
@@ -165,6 +168,7 @@ header a:hover {
 }
 .video-container h2 {
   font-size: 26px;
+  font-weight: 100;
   color: #1f2933;
   margin: 0px;
 }
@@ -202,6 +206,7 @@ header a:hover {
 .learning h1 {
   color: #e5e7eb;
   font-size: 28px;
+  font-weight: 100;
   margin: 0px;
 }
 .learning a {
@@ -232,6 +237,7 @@ header a:hover {
 .certifications h4 {
   color: #4b5563;
   font-size: 20px;
+  font-weight: 100;
 }
 .certifications .slider-container {
   display: flex;
@@ -295,11 +301,13 @@ header a:hover {
 .tech-stack h2 {
   color: #1f2933;
   font-size: 18px;
+  font-weight: 100;
   margin: 0px;
 }
 .tech-stack h4 {
   color: #4b5563;
   font-size: 20px;
+  font-weight: 100;
   margin: 0px 0 20px 0;
 }
 .tech-stack .tech-icons {
@@ -630,6 +638,7 @@ button {
   /* --- Navigation Bar --- */
   header .hamburger {
     display: none;
+    position: sticky;
   }
   header .nav-container {
     justify-content: space-between;
@@ -654,6 +663,9 @@ button {
   }
   header li {
     margin-left: 20px;
+  }
+  header a {
+    font-size: 15px;
   }
   /* hero section */
   .hero-container {

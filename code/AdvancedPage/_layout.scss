@@ -1,0 +1,190 @@
+/* _layout.scss */
+@use "variables" as *;
+
+/* --- Navigation Bar --- */
+header {
+  background-color: $secondary-color;
+  padding: 0px 20px;
+
+  .nav-container {
+    display: flex;
+    justify-content: space-between; // hamburger on the right
+    align-items: center;
+  }
+
+  .logo img {
+    height: 70px;
+  }
+
+  /* Hamburger */
+  .hamburger {
+    background: none;
+    border: none;
+    color: $primary-text;
+    font-size: 26px;
+    cursor: pointer;
+    z-index: 1001;
+    padding: 8px 14px;
+  }
+
+  /* mobile menu */
+  ul {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    background-color: $secondary-color;
+
+    list-style: none;
+    padding: 80px 20px;
+    margin: 0;
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    transform: translateX(100%); // hidden off screen
+    transition: transform 0.3s ease;
+    z-index: 1000;
+  }
+
+  ul.active {
+    transform: translateX(0);
+  }
+
+  a {
+    color: $primary-text;
+    text-decoration: none;
+    font-weight: lighter;
+
+    &:hover {
+      color: $accent-color;
+    }
+  }
+}
+
+// ---- LAYOUT ------ //
+
+.content {
+  display: flex;
+  height: 100vh;
+}
+
+.sidebar {
+  background-color: $primary-text;
+  flex: 0 0 18%;
+}
+
+.projects-view {
+  background-color: $background-color;
+  flex: 1;
+  height: 100vh;
+}
+
+.detail {
+  padding: 4.5rem;
+  background-color: $background-color;
+}
+
+.description {
+  background-color: $background-color;
+  box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.06);
+  padding: 3rem;
+}
+
+/* --- Footer Section --- */
+footer {
+  background-color: $secondary-color;
+  padding: 20px;
+
+  ul {
+    display: flex;
+    justify-content: center;
+    padding: 10px 0px px 0px;
+    margin: 0;
+    list-style: none;
+  }
+
+  li {
+    margin-right: 20px;
+  }
+
+  h4 {
+    color: $primary-text;
+    font-size: 16px;
+    margin: 0;
+  }
+
+  a {
+    color: $primary-text;
+    font-weight: lighter; //Fix bold issue
+    &:hover {
+      color: $accent-color;
+    }
+  }
+}
+
+.footer-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 0;
+  background-color: $secondary-color;
+
+  a {
+    margin: 0 10px;
+  }
+  .fa-linkedin {
+    color: #0a66c2;
+  }
+
+  .fa-square-github {
+    color: #171515;
+  }
+}
+
+/* --- BREAKPOINTS/RESPONSIVNESS --- */
+@media (min-width: 800px) {
+  /* -------- HOMEPAGE --------*/
+
+  /* --- Navigation Bar --- */
+  header {
+    .hamburger {
+      display: none;
+    }
+
+    .nav-container {
+      justify-content: space-between;
+      padding: 10px;
+    }
+
+    .logo {
+      position: static;
+      transform: none;
+    }
+
+    .logo img {
+      height: 60px;
+    }
+
+    ul {
+      position: static; // remove fixed
+      height: auto;
+      width: auto;
+      transform: none; // cancel translateX
+      display: flex;
+      flex-direction: row;
+      padding: 10px;
+      background: none;
+    }
+
+    li {
+      margin-left: 20px;
+    }
+
+    a {
+      font-size: 15px;
+    }
+  }
+}
