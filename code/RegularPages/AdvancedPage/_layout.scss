@@ -94,7 +94,7 @@ header {
   background-color: $background-color;
 
   @media only screen and (max-width: 800px) {
-    padding: 50px 40px;
+    padding: 30px 15px;
   }
 }
 
@@ -115,6 +115,11 @@ footer {
     padding: 10px 0px px 0px;
     margin: 0;
     list-style: none;
+
+    @media only screen and (max-width: 800px) {
+      display: block;
+      text-align: center;
+    }
   }
 
   li {

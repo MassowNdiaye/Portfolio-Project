@@ -106,7 +106,7 @@ header a:hover {
 }
 @media only screen and (max-width: 800px) {
   .detail {
-    padding: 50px 40px;
+    padding: 30px 15px;
   }
 }
 
@@ -127,6 +127,12 @@ footer ul {
   padding: 10px 0px px 0px;
   margin: 0;
   list-style: none;
+}
+@media only screen and (max-width: 800px) {
+  footer ul {
+    display: block;
+    text-align: center;
+  }
 }
 footer li {
   margin-right: 20px;
@@ -209,7 +215,9 @@ footer a:hover {
     font-size: 16px;
     margin: 0;
     align-items: center;
-    overflow: hidden;
+    overflow-x: auto;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
   }
 }
 .side-nav_item {
@@ -280,8 +288,13 @@ footer a:hover {
   font-size: 28px;
   font-weight: 400;
 }
+@media only screen and (max-width: 800px) {
+  .overview_title h1 {
+    font-size: 20px;
+  }
+}
 .overview_live {
-  padding-right: 30px;
+  padding-right: 20px;
 }
 .overview_live a {
   color: #3b82f6;

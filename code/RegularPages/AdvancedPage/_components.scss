@@ -12,7 +12,9 @@
     font-size: 16px;
     margin: 0;
     align-items: center;
-    overflow: hidden;
+    overflow-x: auto;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
   }
 
   &_item {
@@ -91,11 +93,15 @@
       margin-bottom: 0;
       font-size: 28px;
       font-weight: 400;
+
+      @media only screen and (max-width: 800px) {
+        font-size: 20px;
+      }
     }
   }
 
   &_live {
-    padding-right: 30px;
+    padding-right: 20px;
     a {
       color: $accent-color;
     }
