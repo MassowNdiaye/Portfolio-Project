@@ -7,11 +7,23 @@
   margin-top: 40px;
   padding: 0;
 
+  @media only screen and (max-width: 800px) {
+    display: flex;
+    font-size: 16px;
+    margin: 0;
+    align-items: center;
+    overflow: hidden;
+  }
+
   &_item {
     position: relative;
 
     &:not(:last-child) {
       margin-bottom: 0.8rem;
+
+      @media only screen and (max-width: 800px) {
+        margin: 0;
+      }
     }
   }
 
@@ -37,9 +49,15 @@
     color: $background-color;
     text-decoration: none;
     display: block;
-    padding: 1.5rem 3rem;
+    padding: 1rem 3rem;
     position: relative;
     z-index: 10;
+  }
+
+  @media only screen and (max-width: 800px) {
+    .side-nav_link {
+      padding: 0.5rem 1rem; // no vertical padding
+    }
   }
 }
 
@@ -110,4 +128,8 @@
   gap: 200px;
   padding-top: 20px;
   border-top: solid 1px $secondary-color;
+
+  @media only screen and (max-width: 800px) {
+    display: block;
+  }
 }

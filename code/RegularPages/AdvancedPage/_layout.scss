@@ -68,18 +68,20 @@ header {
 
 .content {
   display: flex;
-  height: 100vh;
+  flex: 1;
+
+  @media only screen and (max-width: 800px) {
+    flex-direction: column;
+  }
 }
 
 .sidebar {
   background-color: $primary-text;
-  flex: 0 0 18%;
 }
 
 .projects-view {
   background-color: $background-color;
   flex: 1;
-  height: 100vh;
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
@@ -90,6 +92,10 @@ header {
   box-sizing: border-box;
   padding: 4.5rem;
   background-color: $background-color;
+
+  @media only screen and (max-width: 800px) {
+    padding: 50px 40px;
+  }
 }
 
 .description {

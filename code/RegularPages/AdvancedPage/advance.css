@@ -16,12 +16,6 @@ body {
   color: #1f2933;
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
-}
-
-main {
-  flex: 1;
-  background-color: #ffffff;
 }
 
 /* _layout.scss */
@@ -84,23 +78,36 @@ header a:hover {
 
 .content {
   display: flex;
-  height: 100vh;
+  flex: 1;
+}
+@media only screen and (max-width: 800px) {
+  .content {
+    flex-direction: column;
+  }
 }
 
 .sidebar {
   background-color: #1f2933;
-  flex: 0 0 18%;
 }
 
 .projects-view {
   background-color: #ffffff;
   flex: 1;
-  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
 }
 
 .detail {
+  flex: 1;
+  box-sizing: border-box;
   padding: 4.5rem;
   background-color: #ffffff;
+}
+@media only screen and (max-width: 800px) {
+  .detail {
+    padding: 50px 40px;
+  }
 }
 
 .description {
@@ -196,11 +203,25 @@ footer a:hover {
   margin-top: 40px;
   padding: 0;
 }
+@media only screen and (max-width: 800px) {
+  .side-nav {
+    display: flex;
+    font-size: 16px;
+    margin: 0;
+    align-items: center;
+    overflow: hidden;
+  }
+}
 .side-nav_item {
   position: relative;
 }
 .side-nav_item:not(:last-child) {
   margin-bottom: 0.8rem;
+}
+@media only screen and (max-width: 800px) {
+  .side-nav_item:not(:last-child) {
+    margin: 0;
+  }
 }
 .side-nav_item::before {
   content: "";
@@ -221,9 +242,14 @@ footer a:hover {
   color: #ffffff;
   text-decoration: none;
   display: block;
-  padding: 1.5rem 3rem;
+  padding: 1rem 3rem;
   position: relative;
   z-index: 10;
+}
+@media only screen and (max-width: 800px) {
+  .side-nav .side-nav_link {
+    padding: 0.5rem 1rem;
+  }
 }
 
 .gallery {
@@ -283,6 +309,11 @@ footer a:hover {
   gap: 200px;
   padding-top: 20px;
   border-top: solid 1px #e5e7eb;
+}
+@media only screen and (max-width: 800px) {
+  .list {
+    display: block;
+  }
 }
 
 /*# sourceMappingURL=advance.css.map */
